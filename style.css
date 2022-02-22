@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,500&family=Roboto:ital,wght@1,300&family=Shizuru&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+.mobile-container {
+  width: 320px;
+  height: 500px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+}
+
+header input {
+  padding: 0.5rem 1rem;
+  background-color: #ecf4ff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.7rem;
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+  color: rgb(87, 76, 76);
+  font-size: 0.9rem;
+}
+
+/* fav-container */
+
+.fav-container {
+  background-color: #fdf0ff;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.fav-container h3 {
+  margin-bottom: 0.5rem;
+}
+
+.fav-meals {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.fav-meals li {
+  width: 60px;
+}
+
+.fav-container li img {
+  border-radius: 50px;
+  border: 2.2px solid rgb(214, 214, 214);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.fav-container li span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+/* mails */
+
+.mail {
+  margin: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.mail-header {
+  position: relative;
+}
+
+.mail .random {
+  position: absolute;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  padding: 0.25rem 0.25rem;
+}
+
+.mail-header img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.mail-body {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.mail-body .fav-btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(150, 150, 150);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.mail-body .fav-btn.active {
+  color: #ff4040;
+}
+
+/* person */
+
+.person {
+  margin: 0.8rem;
+  background-color: #b1bfd8;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+  padding: 0.5rem;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.person-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.person-row p {
+  margin-bottom: 0.2rem;
+}
+
+.person-btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 8px 0 8px 67px;
+  padding: 0.2rem 1.1rem;
+}
