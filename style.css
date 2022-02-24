@@ -105,7 +105,8 @@ header button {
   position: absolute;
   background-color: white;
   border-bottom-right-radius: 5px;
-  padding: 0.25rem 0.25rem;
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
 }
 
 .meal-header img {

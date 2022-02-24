@@ -1,13 +1,14 @@
 const meall = document.querySelector(".meals");
 
-getRandomMeal();
+// meals
 async function getRandomMeal(){
     const raspData = await (await fetch("https://www.themealdb.com/api/json/v1/1/random.php")).json()
     const randomMeal = raspData.meals[0]
     addMael(randomMeal,true)
 }
+getRandomMeal();
 
-function addMael(mealData , random = false){
+function addMael(mealData , random = true){
     const meal = document.createElement("div");
     meal.classList.add('meal');
 
@@ -18,10 +19,16 @@ function addMael(mealData , random = false){
         </div>
         <div class="meal-body">
             <h4>${mealData.strMeal}</h4>
-            <button class="fav-btn active"><i class="far fa-heart" aria-hidden="true"></i></button>
-        </div>`
+            <button class="fav-btn"><i class="far fa-heart" aria-hidden="true"></i></button>
+        </div>`;
 
-        meall.appendChild(meal)
+        meall.appendChild(meal);
+
+        const btn = document.querySelector(".meal-body .fav-btn");
+        btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+        });
+
 }
 
 
