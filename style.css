@@ -34,7 +34,7 @@ header {
 
 header input {
   padding: 0.5rem 1rem;
-  background-color: #ecf4ff;
+  background-color: #e7e7e7;
   border: none;
   border-radius: 3px;
   font-size: 0.7rem;
@@ -44,7 +44,7 @@ header button {
   border: none;
   background-color: transparent;
   color: rgb(87, 76, 76);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* fav-container */
@@ -85,6 +85,42 @@ header button {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
   align-items: center;
+}
+
+/* person */
+
+.person {
+  margin: 0.8rem;
+  background-color: #b1bfd8;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+  padding: 0.5rem;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.person-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.person-row p {
+  margin-bottom: 0.2rem;
+}
+
+.person-btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 8px 0 8px 67px;
+  padding: 0.2rem 1.1rem;
 }
 
 /* meals */
@@ -132,40 +168,4 @@ header button {
 
 .meal-body .fav-btn.active {
   color: #ff4040;
-}
-
-/* person */
-
-.person {
-  margin: 0.8rem;
-  background-color: #b1bfd8;
-  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
-  padding: 0.5rem;
-  border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.person-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.person-row p {
-  margin-bottom: 0.2rem;
-}
-
-.person-btn {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border: none;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 12px;
-  margin: 8px 0 8px 67px;
-  padding: 0.2rem 1.1rem;
 }

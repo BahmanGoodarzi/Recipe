@@ -26,11 +26,38 @@ function addMael(mealData , random = true){
 
         const btn = document.querySelector(".meal-body .fav-btn");
         btn.addEventListener("click", () => {
-            btn.classList.toggle("active");
+            if(btn.classList.contains('active')){
+                removeMealLS(mealData.idMeal)
+                btn.classList.remove("active");
+            }else{
+                addMealLS(mealData.idMeal)
+                btn.classList.add("active");
+            }
         });
-
 }
 
+
+
+function addMealLS(mealId){
+    const mealIds = getMealLS();
+    localStorage.setItem("mealIds" ,JSON.stringify([...mealIds , mealId]));
+}
+
+function removeMealLS(mealId){
+    const mealIds = getMealLS();
+    localStorage.setItem("mealIds" ,JSON.stringify(mealIds.filter((id) => id !== mealId)));
+}
+
+function getMealLS(){
+    const mealIds = JSON.parse(localStorage.getItem("mealIds"));
+    return mealIds === null ? [] : mealIds;
+    
+}
+
+
+function fetchFavMeals(){
+    const mealIds =getMealLS();
+}
 
 
 
